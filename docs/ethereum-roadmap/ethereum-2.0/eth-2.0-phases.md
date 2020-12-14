@@ -28,7 +28,7 @@ Ethereum researcher Danny Ryan has [stipulated](https://github.com/ethereum/eth2
 
 ### **What is included?**
 
-Phase 0 is the name given to the launch of the Beacon Chain. The Beacon Chain will manage the Casper Proof of Stake protocol for itself and all of the shard chains. As Ben Edgington [puts it](https://media.consensys.net/state-of-ethereum-protocol-2-the-beacon-chain-c6b6a9a69129), “There are a number of aspects to this: managing validators and their stakes; nominating the chosen block proposer for each shard at each step; organizing validators into committees to vote on the proposed blocks; applying the consensus rules; applying rewards and penalties to validators; and, being an anchor point on which the shards register their states to facilitate cross-shard transactions.”
+Phase 0 is the name given to the launch of the Beacon Chain. The Beacon Chain will manage the Casper Proof of Stake protocol for itself and all of the shard chains. As Ben Edgington [puts it](https://media.consensys.net/state-of-ethereum-protocol-2-the-beacon-chain-c6b6a9a69129), “There are a number of aspects to this: managing validators and their stakes; nominating the chosen block proposer for each shard at each step; organizing validators into committees to vote on the proposed blocks; applying the consensus rules; applying rewards and penalties to validators; and, being an anchor point on which the shards register their states to facilitate cross-shard transactions.”.
 
 The primary source of load on the Beacon Chain will be "attestations". Attestations are availability votes for a shard block and, simultaneously, proof of stake votes for a beacon block. A sufficient number of attestations for the same shard block will create a "crosslink" which confirms the shard segment up to that shard block into the Beacon Chain.
 
@@ -45,7 +45,7 @@ After a validator public key reaches a balance of 32 ETH, it is registered as ac
 
 Once Phase 0 is complete, there will be two active Ethereum chains. For the sake of clarity let’s call them the Eth1 chain \(current, PoW main chain\) and the Eth2 chain \(new Beacon Chain\). During this phase, users will be able to send their ETH from the Eth1 chain to the Eth2 chain and become validators. They will NOT be able to migrate this ETH back to Eth1 (for now).
 
-In order to run the Beacon Chain, you’re going to need a Beacon Chain client. These are currently being developed separately from the familiar suite of standard Ethereum clients (Geth, Nethermind, Pantheon, et al.) by a number of [teams](/ethereum-roadmap/ethereum-2.0/eth2.0-teams/teams-building-eth2.0/). Most of the teams are putting out periodic updates on their client development progress, and some of the teams are offering bounties to contributors to include more and more developers in building 2.0. You can contribute on Gitcoin grants [here](https://gitcoin.co/grants/)
+In order to run the Beacon Chain, you’re going to need a Beacon Chain client. These are currently being developed separately from the familiar suite of standard Ethereum clients (Geth, Nethermind, Pantheon, et al.) by a number of [teams](/ethereum-roadmap/ethereum-2.0/eth2.0-teams/teams-building-eth2.0/). Most of the teams are putting out periodic updates on their client development progress, and some of the teams are offering bounties to contributors to include more and more developers in building 2.0. You can contribute on Gitcoin grants [here](https://gitcoin.co/grants/).
 
 On its own, the Beacon Chain might not seem particularly useful. But, as the first component of Ethereum 2.0 to be delivered, it is the foundation of the entire system.
 
@@ -86,10 +86,10 @@ Phase 2 is where the functionality of the entire system will start to come toget
 Phase 2 also introduces the concept of 'Execution Environments (EEs)'. EEs within a shard can be constructed in whatever way a developer sees fit - there could be an EE for a UTXO-style chain, a Libra-style system, an EE for a fee market relayer and beyond. Every shard has access to all execution environments and has the ability to make transactions within them as well as run and interact with smart contracts. Do note that the concept of execution environments is still in heavy research and development.
 
 ### Important Considerations
-* A dApp will have to choose what shard it wants to be on. That decision matters because cross-shard communication differs on Eth2 as it is not synchronous which means some composability is lost between shards<br/>
+* A dApp will have to choose what shard it wants to be on. That decision matters because cross-shard communication differs on Eth2 as it is not synchronous which means some composability is lost between shards.<br/>
 * A dApp would have to have rather large data to consume all the resources in a given shard to justify spreading itself over multiple ones.<br/>
 * This phase will endow shards with eWASM as the EVM 2.0.
-* It is an open question when and how Ethereum 1.0 accounts and contracts will be migrated to Ethereum 2.0, there are some [upgrade plans](https://ethresear.ch/t/the-eth1-eth2-transition/6265)
+* It is an open question when and how Ethereum 1.0 accounts and contracts will be migrated to Ethereum 2.0, there are some [upgrade plans](https://ethresear.ch/t/the-eth1-eth2-transition/6265).
 
 ## Resources
 
